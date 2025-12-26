@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 pt-8 pb-6">
       <Container>
-        <div className="mx-4 lg:mx-16 max-w-full bg-fa-white rounded-2xl p-4 lg:p-8 flex items-center shadow-md">
+        <div className="max-w-full bg-fa-white rounded-2xl p-4 lg:p-8 flex items-center">
           {/* Left Side */}
           <div className="flex-1 flex justify-start">
             <SideMenu />

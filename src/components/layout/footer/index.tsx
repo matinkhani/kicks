@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <div className="mx-4 lg:mx-16 relative mb-16">
+        <div className="relative mb-16">
           {/* BLUE SECTION */}
           <div className="rounded-[32px] bg-blue px-4 pt-8 lg:px-20 lg:pt-16 pb-32">
             <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
