@@ -3,29 +3,38 @@ import { SideMenu } from "./components/side-menu";
 import { SearchComponent } from "./components/search";
 import { Profile } from "./components/profile";
 import { Notifications } from "./components/notifications";
+import Container from "@/components/shared/container";
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-50 pt-8 pb-6">
-      <div className="mx-4 lg:mx-16 max-w-full bg-fa-white rounded-2xl p-4 lg:p-8 flex items-center shadow-md">
-        {/* Left Side */}
-        <div className="flex-1 flex justify-start">
-          <SideMenu />
-        </div>
+    <header className="sticky top-0 z-50 pt-8 pb-6">
+      <Container>
+        <div className="mx-4 lg:mx-16 max-w-full bg-fa-white rounded-2xl p-4 lg:p-8 flex items-center shadow-md">
+          {/* Left Side */}
+          <div className="flex-1 flex justify-start">
+            <SideMenu />
+          </div>
 
-        {/* Center - Logo */}
-        <div className="flex justify-center">
-          <Image src={"/Logo.png"} alt="logo" width={80} height={20} priority />
-        </div>
+          {/* Center - Logo */}
+          <div className="flex justify-center">
+            <Image
+              src={"/Logo.png"}
+              alt="logo"
+              width={80}
+              height={20}
+              priority
+            />
+          </div>
 
-        {/* Right Side */}
-        <div className="flex-1 flex justify-end items-center gap-2 lg:gap-4">
-          <SearchComponent />
-          <Profile />
-          <Notifications />
+          {/* Right Side */}
+          <div className="flex-1 flex justify-end items-center gap-2 lg:gap-4">
+            <SearchComponent />
+            <Profile />
+            <Notifications />
+          </div>
         </div>
-      </div>
-    </div>
+      </Container>
+    </header>
   );
 };
 

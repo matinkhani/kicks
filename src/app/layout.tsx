@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"></link>;
 
@@ -25,9 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubikSans.variable}  antialiased bg-gray`}>
+      <body className={`${rubikSans.variable}  antialiased bg-gray z-20`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
